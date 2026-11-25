@@ -626,6 +626,11 @@ function Landing({ onToc }: { onToc: () => void }) {
             محتوى متكامل لكتاب الضرائب: كل باب بملخص مبسط وبوسترات ودياجرامز
             للأرقام والنسب، وملخص الملخص للمراجعة السريعة قبل الامتحان.
           </p>
+          <p className="land-note">
+            مادة مساعدة للمذاكرة مبنية على مقرر الفرقة الثالثة (قانون الضريبة
+            على الدخل رقم 91 لسنة 2005)، وليست استشارة ضريبية ولا تعكس بالضرورة
+            أحدث التعديلات. ارجع للقانون وللكتاب عند أي شك.
+          </p>
           <div className="land-cta">
             <Link to="/intro" className="land-btn-main">
               <svg
@@ -706,6 +711,10 @@ function FloatNav() {
   openRef.current = open;
 
   React.useEffect(() => {
+    document.documentElement.classList.toggle(
+      "fn-direct",
+      window.top === window.self,
+    );
     const cont = document.createElement("div");
     cont.className = "fn-sentinels";
     document.body.appendChild(cont);
@@ -976,4 +985,4 @@ export function App() {
       </Closing>
     </FileCard>
   );
-    }
+}
