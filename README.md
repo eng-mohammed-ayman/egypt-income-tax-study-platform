@@ -1,8 +1,10 @@
 # Egypt Income Tax Study Guide (Law 91 of 2005)
 
-An interactive Arabic study guide for tax accounting, based on the Egyptian Income Tax Law No. 91 of 2005. It has chapter summaries, one-page review posters, "summary of the summary" lists and worked examples, in a right-to-left layout that works on phone and desktop.
+An interactive Arabic study platform for the Egyptian Income Tax Law, based on the Egyptian Income Tax Law No. 91 of 2005. It has chapter summaries, one-page review posters, "summary of the summary" lists and worked examples, in a right-to-left layout that works on phone and desktop.
 
 **Live site:** https://egypt-income-tax-study.pages.dev
+
+**Author:** Mohamed Ayman Harash, AI Engineer | [Portfolio](https://eng-mohammed-ayman-harash.pages.dev) | [GitHub](https://github.com/eng-mohammed-ayman)
 
 ## Where the code lives
 
@@ -20,7 +22,7 @@ An interactive Arabic study guide for tax accounting, based on the Egyptian Inco
 
 Built with AI-assisted development (Claude Code): agentic coding workflows, prompt engineering and iterative prototyping, by Mohamed Ayman Harash. The content is summarized from a university textbook and checked against its pages.
 
-`src/App.tsx` imports UI components from the `@instinct/files` kit, which is not part of this repository, so `src/` is there to read, not to rebuild.
+The `src/` folder is the readable source of the site. The deployed build is the compiled bundle in the repository root.
 
 ## Run the built site
 
@@ -28,4 +30,4 @@ There is no build step for the built files. Serve the folder with any static ser
 
 ## Note
 
-This is a student study aid, not legal or tax advice. Check the law and your textbook for anything that matters. Minor errors may remain.
+This is a student study aid, not legal or tax advice. Check the law and your textbook for anything that matters.
