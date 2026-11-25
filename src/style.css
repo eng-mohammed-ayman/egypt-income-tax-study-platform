@@ -1578,4 +1578,34 @@ body {
 }
 .land-card-index .land-ico {
   color: #e6cd8a;
-  }
+}
+
+.land-note {
+  margin: 10px 0 18px;
+  font-size: 12.5px;
+  line-height: 1.8;
+  color: #5b6578;
+  max-width: 560px;
+}
+/* direct serving (not inside the file viewer iframe): the page scrolls inside #root, so the chip and panel are fixed to the screen */
+.fn-direct .fn-chip {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  right: 10px;
+}
+.fn-direct .fn-chip.fn-chip-hide:not(.fn-chip-off) {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.fn-direct .fn-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  height: 100vh !important;
+}
+.fn-direct .fn-panel {
+  position: fixed !important;
+  top: 50% !important;
+  transform: translateY(-50%);
+  max-height: min(560px, 78vh) !important;
+}
