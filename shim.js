@@ -1,0 +1,1 @@
+window.instinctFile={initialRoute:(decodeURIComponent(location.hash.slice(1))||'/'),route:function(){},asset:function(u){return u},request:function(){return Promise.reject(new Error('offline'))},live:function(){return function(){}}};
