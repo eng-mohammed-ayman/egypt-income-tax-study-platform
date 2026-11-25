@@ -16234,6 +16234,7 @@ Error generating stack: ` + i.message + `
           ] }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "land-sub", children: "\u0630\u0627\u0643\u0631 \u0628\u0630\u0643\u0627\u0621 .. \u0648\u062D\u0642\u0642 \u0623\u0639\u0644\u0649 \u0627\u0644\u062F\u0631\u062C\u0627\u062A" }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "land-desc", children: "\u0645\u062D\u062A\u0648\u0649 \u0645\u062A\u0643\u0627\u0645\u0644 \u0644\u0643\u062A\u0627\u0628 \u0627\u0644\u0636\u0631\u0627\u0626\u0628: \u0643\u0644 \u0628\u0627\u0628 \u0628\u0645\u0644\u062E\u0635 \u0645\u0628\u0633\u0637 \u0648\u0628\u0648\u0633\u062A\u0631\u0627\u062A \u0648\u062F\u064A\u0627\u062C\u0631\u0627\u0645\u0632 \u0644\u0644\u0623\u0631\u0642\u0627\u0645 \u0648\u0627\u0644\u0646\u0633\u0628\u060C \u0648\u0645\u0644\u062E\u0635 \u0627\u0644\u0645\u0644\u062E\u0635 \u0644\u0644\u0645\u0631\u0627\u062C\u0639\u0629 \u0627\u0644\u0633\u0631\u064A\u0639\u0629 \u0642\u0628\u0644 \u0627\u0644\u0627\u0645\u062A\u062D\u0627\u0646." }),
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { className: "land-note", children: "\u0645\u0627\u062F\u0629 \u0645\u0633\u0627\u0639\u062F\u0629 \u0644\u0644\u0645\u0630\u0627\u0643\u0631\u0629 \u0645\u0628\u0646\u064A\u0629 \u0639\u0644\u0649 \u0645\u0642\u0631\u0631 \u0627\u0644\u0641\u0631\u0642\u0629 \u0627\u0644\u062B\u0627\u0644\u062B\u0629 (\u0642\u0627\u0646\u0648\u0646 \u0627\u0644\u0636\u0631\u064A\u0628\u0629 \u0639\u0644\u0649 \u0627\u0644\u062F\u062E\u0644 \u0631\u0642\u0645 91 \u0644\u0633\u0646\u0629 2005)\u060C \u0648\u0644\u064A\u0633\u062A \u0627\u0633\u062A\u0634\u0627\u0631\u0629 \u0636\u0631\u064A\u0628\u064A\u0629 \u0648\u0644\u0627 \u062A\u0639\u0643\u0633 \u0628\u0627\u0644\u0636\u0631\u0648\u0631\u0629 \u0623\u062D\u062F\u062B \u0627\u0644\u062A\u0639\u062F\u064A\u0644\u0627\u062A. \u0627\u0631\u062C\u0639 \u0644\u0644\u0642\u0627\u0646\u0648\u0646 \u0648\u0644\u0644\u0643\u062A\u0627\u0628 \u0639\u0646\u062F \u0623\u064A \u0634\u0643." }),
           /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "land-cta", children: [
             /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, { to: "/intro", className: "land-btn-main", children: [
               /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", { viewBox: "0 0 24 24", width: "18", height: "18", fill: "none", stroke: "currentColor", strokeWidth: "1.9", strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": "true", children: [
@@ -16280,6 +16281,7 @@ Error generating stack: ` + i.message + `
     const openRef = import_react.default.useRef(open);
     openRef.current = open;
     import_react.default.useEffect(() => {
+      document.documentElement.classList.toggle("fn-direct", window.top === window.self);
       const cont = document.createElement("div");
       cont.className = "fn-sentinels";
       document.body.appendChild(cont);
