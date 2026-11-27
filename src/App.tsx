@@ -48,7 +48,8 @@ type Block =
   | {
       k: "table";
       caption: string;
-      options: { number: number; name: string }[];
+      corner?: string;
+      options: { number?: number; name: string }[];
       rows: { label: string; values: string[] }[];
     };
 
@@ -131,10 +132,15 @@ function BlockView({ b, caption }: { b: Block; caption: string }) {
             <caption>{caption}</caption>
             <thead>
               <tr>
-                <th></th>
+                <th>{b.corner}</th>
                 {b.options.map((o) => (
-                  <th key={o.number}>
-                    <span className="tx-badge">{o.number}</span> {o.name}
+                  <th key={o.number ?? o.name}>
+                    {o.number != null && (
+                      <>
+                        <span className="tx-badge">{o.number}</span>{" "}
+                      </>
+                    )}
+                    {o.name}
                   </th>
                 ))}
               </tr>
